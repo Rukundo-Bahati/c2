@@ -2,7 +2,7 @@
 
 A comprehensive Command & Control (C2) framework consisting of a lightweight TCP-based C2 server and a feature-rich Windows implant. Designed for educational purposes and penetration testing.
 
-## 🚀 Features
+## Features
 
 ### C2 Server (`quick_c2.py`)
 - **JSON-over-TCP Protocol** - Lightweight and efficient communication
@@ -24,7 +24,7 @@ A comprehensive Command & Control (C2) framework consisting of a lightweight TCP
 - **Anti-VM Detection** - Detect virtual environments
 - **UAC Bypass** - Privilege escalation techniques
 
-## 📋 Requirements
+##  Requirements
 
 ### Server Requirements
 - Python 3.8+
@@ -39,7 +39,7 @@ A comprehensive Command & Control (C2) framework consisting of a lightweight TCP
 - Windows 10/11 (any edition)
 - No additional software required
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### 1. Clone Repository
 ```bash
@@ -75,7 +75,7 @@ QUICK_C2_PORT = 8443
   netsh advfirewall firewall add rule name="C2_Server_8443" dir=in action=allow protocol=TCP localport=8443
   ```
 
-## 🔨 Building the Executable
+## Building the Executable
 
 ### Quick Build
 ```bash
@@ -95,7 +95,7 @@ pyinstaller ghost.spec
 - **Compatibility**: Any Windows 10/11 machine
 - **Dependencies**: None (fully portable)
 
-## 🎯 Usage
+## Usage
 
 ### 1. Start C2 Server
 ```bash
@@ -171,24 +171,9 @@ c2> upload local_file.txt remote_file.txt    # Upload file to victim
 c2> broadcast /screenshot       # Send command to all victims
 ```
 
-## 📁 Project Structure
 
-```
-ghost-c2/
-├── ghost.py              # Main implant source code
-├── quick_c2.py          # C2 server
-├── requirements.txt     # Python dependencies
-├── ghost.spec          # PyInstaller configuration
-├── build.bat           # Windows build script
-├── build.py            # Cross-platform build script
-├── BUILD_INSTRUCTIONS.md # Detailed build guide
-├── README.md           # This file
-├── dist/               # Built executables
-│   └── ghost.exe      # Compiled implant
-└── build/             # Build artifacts
-```
 
-## 🔧 Configuration Options
+##  Configuration Options
 
 ### Transport Configuration
 ```python
@@ -215,7 +200,7 @@ HIDE_CONSOLE = True
 BLOCK_TASK_MANAGER = True
 ```
 
-## 🛡️ Security Features
+##  Security Features
 
 ### Implant Security
 - **Console Hiding** - No visible windows
@@ -230,7 +215,7 @@ BLOCK_TASK_MANAGER = True
 - **Connection Resilience** - Auto-reconnection on disconnect
 - **Multi-client Support** - Handle many victims simultaneously
 
-## 🔍 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -268,15 +253,8 @@ BLOCK_TASK_MANAGER = True
 
 **Users are solely responsible for ensuring their use complies with applicable laws and regulations.**
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📝 Changelog
+##  Changelog
 
 ### v2.0 (Current)
 - Added TCP-based C2 server
@@ -290,7 +268,7 @@ BLOCK_TASK_MANAGER = True
 - Basic command execution
 - Screenshot capabilities
 
-## 🔗 Related Documentation
+##  Related Documentation
 
 - [BUILD_INSTRUCTIONS.md](BUILD_INSTRUCTIONS.md) - Detailed build guide
 - [requirements.txt](requirements.txt) - Python dependencies
