@@ -1,0 +1,27 @@
+.env/
+build/
+dist/
+__pycache__/
+
+# Received files from the application
+received_*
+
+# Media files
+*.jpg
+*.jpeg
+*.png
+*.avi
+*.wav
+*.mp4
+*.zip
+
+# Python cache and build files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+build/
+dist/
